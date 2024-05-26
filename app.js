@@ -28,11 +28,8 @@ app.get("/:p1/:p2/:p3", (req, res) => {
     return res.status(400).send("Invalid input");
   } else {
     let ans = calc(p1, p2, p3);
-    if (ans == -1) {
-      res.status(400).json({ draws: ans });
-    } else {
-      res.status(200).json({ draws: ans });
-    }
+    return res.status(200).json({ draws: ans });
+     
   }
 });
 
@@ -40,4 +37,4 @@ app.get("/:p1/:p2/:p3", (req, res) => {
     console.log(`Running on Port ${port}`);
   });
 
-module.exports = {app,calc};
+module.exports = app;
