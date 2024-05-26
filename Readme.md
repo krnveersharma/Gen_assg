@@ -1,3 +1,20 @@
+# Web API for Go Game Score Calculation
+
+## Setup
+
+### Prerequisites
+- Node.js
+- npm
+
+### Installation
+
+- Clone the repository :- git clone https://github.com/krnveersharma/Gen_assg.git
+
+- run npm install on terminal
+
+- To start the server run node app.js
+
+
 ## API Documentation
 
 ### Endpoint
